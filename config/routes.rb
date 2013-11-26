@@ -63,3 +63,14 @@ MyTestStore::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+
+Spree::Core::Engine.routes.draw do
+
+  namespace :api, :defaults => { :format => 'json' } do
+    
+    post '/login' => 'users#login', :as => :login
+        
+  end
+
+end
+

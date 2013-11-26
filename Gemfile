@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 
-gem 'sqlite3'
+gem 'pg'
 
 
 # Gems used only for assets and not required
@@ -29,7 +29,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'faker'
+  # gem 'faker'
   gem 'capybara', '~> 2.1'
   gem 'database_cleaner', '~> 1.0.1'
   gem 'email_spec', '1.4.0'
